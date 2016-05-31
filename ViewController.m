@@ -345,8 +345,6 @@ UIImageView *backgroundView, *winningView;
 
 - (void)shuffle
 {
-    //NSUInteger count = [faceArray count];
-    //if (count < 1) return;
     for (NSUInteger i = 0; i < gameSize - 1; ++i) {
         NSInteger remainingCount = gameSize - i;
         NSInteger exchangeIndex = i + arc4random_uniform((u_int32_t )remainingCount);
